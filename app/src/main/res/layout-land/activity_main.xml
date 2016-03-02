@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.galileo.fragmentos.fragmentos.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="5dp"
+        android:weightSum="1">
+
+        <fragment
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/fragmenta"
+            android:layout_weight=".45"
+            android:layout_marginRight="15dp"
+            class="edu.galileo.fragmentos.fragmentos.FragmentA" />
+
+
+        <fragment
+            android:layout_width="0dp   "
+            android:layout_height="match_parent"
+            android:id="@+id/fragmetb"
+            class="edu.galileo.fragmentos.fragmentos.FragmentB"
+            android:layout_weight=".45"
+        />
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a Pantalla 2"
+        android:id="@+id/boton1"
+        android:layout_gravity="right" />
+
+
+</LinearLayout>
+
+
+
+
+
